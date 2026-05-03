@@ -24,7 +24,7 @@ Segments nuclei from the Sytox channel and quantifies micronuclei frequency alon
 ### `Image_4.ipynb` — Cell Cycle Marker Intensity Quantification
 **Channels:** IRF3, DAPI, Ki67  
 **Groups:** Mock 32H, GS 32H  
-Quantifies Ki67 cell cycle marker intensity per cell alongside IRF3 nuclear localization. Computes a per-nucleus Spearman correlation between DAPI and Ki67 intensities. Outputs `image4_results.csv`.
+Quantifies Ki67 cell cycle marker intensity per cell alongside IRF3 nuclear localization. Outputs `image4_results.csv`.
 
 ---
 
