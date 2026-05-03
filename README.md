@@ -1,6 +1,6 @@
 # Fluorescence Image Analysis Pipeline
 
-This repository contains four Jupyter notebooks for automated segmentation and quantification of nuclei from multi-channel fluorescence microscopy images. Each notebook processes `.npy` image arrays, applies DAPI-based nuclear segmentation, and exports per-nucleus measurements to CSV.
+This repository contains four Jupyter notebooks for automated segmentation and quantification of nuclei from multi-channel fluorescence microscopy images. Each notebook processes `.npy` image arrays, segments nuclei from a nuclear stain channel (DAPI or Sytox), and exports per-nucleus measurements to CSV.
 
 ---
 
@@ -17,9 +17,9 @@ Segments nuclei and quantifies mean/total RNAfish signal intensity per cell acro
 Quantifies IRF3 nuclear intensity distribution by comparing mean IRF3 fluorescence inside each nucleus to a surrounding cytoplasmic ring. Classifies each nucleus as nuclear or non-nuclear. Outputs `image2_results.csv`.
 
 ### `Image_3.ipynb` — Micronuclei Frequency and IRF3 Nuclear Signal in MN+ vs MN− Cells
-**Channels:** IRF3, DAPI  
+**Channels:** IRF3, Sytox  
 **Groups:** Mock 32H Rep1, GS 32H Rep1, Mock 32H Rep2, GS 32H Rep2  
-Quantifies micronuclei frequency and IRF3 nuclear signal, stratifying cells by micronucleus status (MN+ vs MN−). Micronuclei are detected in the perinuclear region and filtered by morphology and IRF3 intensity. Outputs `image3_results.csv`.
+Segments nuclei from the Sytox channel and quantifies micronuclei frequency alongside IRF3 nuclear signal, stratifying cells by micronucleus status (MN+ vs MN−). Micronuclei are detected in the perinuclear region and filtered by morphology and IRF3 intensity. Outputs `image3_results.csv`.
 
 ### `Image_4.ipynb` — Cell Cycle Marker Intensity Quantification
 **Channels:** IRF3, DAPI, Ki67  
