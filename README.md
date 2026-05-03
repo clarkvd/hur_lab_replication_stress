@@ -30,7 +30,7 @@ Quantifies Ki67 cell cycle marker intensity per cell alongside IRF3 nuclear loca
 
 ## Input Format
 
-Each notebook reads `.npy` files from a specified input directory. Files must be 3-dimensional arrays of shape `(C, H, W)`, where `C` is the number of channels (as listed above), and `H`/`W` are the image height and width in pixels. File names must begin with the group prefix number defined in `group_map` (e.g., `1_sample.npy`, `19_field2.npy`). Input folders follow the naming convention `imageN_npy` and outputs are written to `imageN_results.csv`.
+Each notebook reads `.npy` files from a specified input directory. Files must be 3-dimensional arrays of shape `(C, H, W)`, where `C` is the number of channels (as listed above), and `H`/`W` are the image height and width in pixels. Input folders follow the naming convention `imageN_npy` and outputs are written to `imageN_results.csv`.
 
 ## Output Format
 
