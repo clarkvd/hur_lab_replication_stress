@@ -7,9 +7,9 @@ This repository contains four Jupyter notebooks for automated segmentation and q
 ## Notebooks
 
 ### `Image_1.ipynb` — RNAfish Signal Intensity Quantification
-**Channels:** anti-47S, DAPI, IFNB1  
+**Channels:** anti-47S, DAPI  
 **Groups:** Mock 32H, GS 32H, Mock 48H, GS 48H  
-Segments nuclei and quantifies mean/total RNAfish signal intensity per cell across all three channels. Transcriptional foci are detected using a watershed-based algorithm. Outputs `image1_results.csv`.
+Segments nuclei and quantifies mean/total RNAfish signal intensity per cell across two channels (anti-47S, DAPI). Transcriptional foci are detected using a watershed-based algorithm. Outputs `image1_results.csv`.
 
 ### `Image_2.ipynb` — IRF3 Nuclear Intensity Distribution
 **Channels:** IRF3, DAPI  
